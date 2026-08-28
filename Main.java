@@ -1,17 +1,20 @@
-public class Main{
+public class Main {
 
     public static void main(String[] args) {
-        System.out.println("===LIVRARIA DEVOPS===");
 
-        Livro livro1 = new Livro("Java para iniciantes", "Ana Silva",80.00,20);
-        Livro livro2 = new Livro("Devops na prática", "Carlos Souza",120.00,3);
-        System.out.println("\n Livro 1");
-        livro1.exibirInformacoes();
-        System.out.println("Valor total em estoque R$: " + livro1.calcularValorEstoque());
+        Pet pet1 = new Pet("Thor", "Cachorro", 4, 80.00);
+        Pet pet2 = new Pet("Mel", "Gato", 3, 60.00);
+        Pet pet3 = new Pet("Nina", "Cachorro", 6, 100.00);
 
-        System.out.println("\n Livro 2");
-        livro2.exibirInformacoes();
-        System.out.println("Valor total em estoque R$: " + livro2.calcularValorEstoque());
-        System.out.println("Aplicação executada com sucesso" );
+        pet1.exibirInformacoes();
+        System.out.println("Valor com desconto: R$ " + pet1.calcularValorComDesconto());
+        System.out.println();
+
+        pet2.exibirInformacoes();
+        System.out.println("Valor com desconto: R$ " + pet2.calcularValorComDesconto());
+        System.out.println();
+
+        pet3.exibirInformacoes();
+        System.out.println("Valor com desconto: R$ " + pet3.calcularValorComDesconto());
     }
 }
