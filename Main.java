@@ -1,20 +1,23 @@
 public class Main {
 
     public static void main(String[] args) {
+<<<<<<< Updated upstream
+=======
+System.out.println("===SISTEMA DE CURSOS===");
+>>>>>>> Stashed changes
 
-        Pet pet1 = new Pet("Thor", "Cachorro", 4, 80.00);
-        Pet pet2 = new Pet("Mel", "Gato", 3, 60.00);
-        Pet pet3 = new Pet("Nina", "Cachorro", 6, 100.00);
+Curso curso1 = new Curso("Desenvolvimento Java","Carlos Silva",40,800.00);
 
-        pet1.exibirInformacoes();
-        System.out.println("Valor com desconto: R$ " + pet1.calcularValorComDesconto());
+Curso curso2 = new Curso("Desenvolvimento Web","Ana Souza",60,1200.00);
+
+Curso curso3 = new Curso("Banco de Dados","Marcos Oliveira",30,600.00); 
+
+        curso1.exibirInformacoes();
         System.out.println();
 
-        pet2.exibirInformacoes();
-        System.out.println("Valor com desconto: R$ " + pet2.calcularValorComDesconto());
+        curso2.exibirInformacoes();
         System.out.println();
 
-        pet3.exibirInformacoes();
-        System.out.println("Valor com desconto: R$ " + pet3.calcularValorComDesconto());
+        curso3.exibirInformacoes();
     }
-}
+}   
